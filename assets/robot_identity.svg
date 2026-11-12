@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" role="img" aria-labelledby="novaTitle novaDesc">
+  <title id="novaTitle">NOVA</title>
+  <desc id="novaDesc">Original geometric robot head representing NOVA, the Neural Operations and Vision Assistant.</desc>
+  <defs>
+    <linearGradient id="shell" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#1B3A5C"/>
+      <stop offset="1" stop-color="#0B1728"/>
+    </linearGradient>
+    <linearGradient id="visor" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#247BFF"/>
+      <stop offset="1" stop-color="#00D9FF"/>
+    </linearGradient>
+    <radialGradient id="halo" cx="50%" cy="50%" r="50%">
+      <stop offset="0" stop-color="#00D9FF" stop-opacity="0.35"/>
+      <stop offset="1" stop-color="#00D9FF" stop-opacity="0"/>
+    </radialGradient>
+    <style>
+      .eye { animation: pulse 3.6s ease-in-out infinite; }
+      .tip { animation: pulse 2.4s ease-in-out infinite; }
+      @keyframes pulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.55; } }
+      @media (prefers-reduced-motion: reduce) { .eye, .tip { animation: none; } }
+    </style>
+  </defs>
+  <circle cx="60" cy="62" r="56" fill="url(#halo)"/>
+  <!-- antenna -->
+  <line x1="60" y1="26" x2="60" y2="13" stroke="#A6B9D0" stroke-width="3" stroke-linecap="round"/>
+  <circle class="tip" cx="60" cy="10" r="5" fill="#00D9FF"/>
+  <!-- ear modules -->
+  <rect x="9" y="52" width="10" height="24" rx="4" fill="#233B56" stroke="#247BFF" stroke-width="1.5"/>
+  <rect x="101" y="52" width="10" height="24" rx="4" fill="#233B56" stroke="#247BFF" stroke-width="1.5"/>
+  <!-- head shell -->
+  <rect x="19" y="26" width="82" height="74" rx="20" fill="url(#shell)" stroke="#00D9FF" stroke-width="2.5"/>
+  <path d="M31 36 H89" stroke="#233B56" stroke-width="2" stroke-linecap="round"/>
+  <!-- visor -->
+  <rect x="29" y="44" width="62" height="26" rx="13" fill="#07111F" stroke="#233B56" stroke-width="1.5"/>
+  <circle class="eye" cx="46" cy="57" r="7" fill="url(#visor)"/>
+  <circle class="eye" cx="74" cy="57" r="7" fill="url(#visor)"/>
+  <circle cx="44" cy="55" r="2" fill="#F2F7FF"/>
+  <circle cx="72" cy="55" r="2" fill="#F2F7FF"/>
+  <!-- speaker grille -->
+  <g stroke="#875BFF" stroke-width="2.5" stroke-linecap="round">
+    <line x1="46" y1="82" x2="46" y2="88"/>
+    <line x1="53" y1="80" x2="53" y2="90"/>
+    <line x1="60" y1="82" x2="60" y2="88"/>
+    <line x1="67" y1="80" x2="67" y2="90"/>
+    <line x1="74" y1="82" x2="74" y2="88"/>
+  </g>
+  <!-- circuit accents -->
+  <path d="M25 92 h8 v-6" fill="none" stroke="#247BFF" stroke-width="1.5" stroke-linecap="round"/>
+  <path d="M95 92 h-8 v-6" fill="none" stroke="#247BFF" stroke-width="1.5" stroke-linecap="round"/>
+</svg>

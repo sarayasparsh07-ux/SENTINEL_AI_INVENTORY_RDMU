@@ -1,0 +1,14 @@
+# SENTINEL AI - Streamlit theme (picked up when you run `streamlit run dashboard/app.py`
+# from the project root). The detailed styling lives in assets/styles.css.
+[theme]
+base = "dark"
+primaryColor = "#00D9FF"
+backgroundColor = "#07111F"
+secondaryBackgroundColor = "#0B1728"
+textColor = "#F2F7FF"
+
+[browser]
+gatherUsageStats = false
+
+[client]
+toolbarMode = "minimal"
